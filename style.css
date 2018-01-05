@@ -1,0 +1,97 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #10458B55;
+}
+div{
+   /* color: rgb(46, 43, 43);*/
+     color: rgb(10, 5, 105);
+}
+
+.container{
+     max-height: 950px;
+    padding: 45px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+.logo{
+    font-family: 'Pacifico', cursive;
+    font-size: 90px;
+    color: rgb(10, 5, 105);
+}
+
+.center{
+    text-align: center;
+}
+
+.box-login{
+    background: #10458B55;
+   padding-top: 2%;
+   padding-bottom: 2%;
+    height: 220px;
+    border-radius: 20px;
+}
+
+.margin-top-login{
+    margin-top: 10px;
+}
+
+th{
+    text-align: center;
+     background: rgba(25, 102, 112, 0.69);
+}
+td{
+    text-align: center;
+    background: rgba(69, 179, 194, 0.69);
+    
+}
+th:hover{
+    text-align: center;
+    background: rgba(25, 102, 112, 0.69);
+}
+
+tr:hover{
+    background: rgba(2, 142, 163, 0.9);
+     color: rgba(2, 14, 14, 0.986);
+}
+
+.btn-foot{
+    margin: 1px;
+    padding: 1px;
+    
+}
+.add .edt .del{
+align-items: center;
+}
+
+.table-tasks{
+   overflow-y: scroll;
+   table-layout: fixed;
+  
+}
+
+  table th:first-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+table th:first-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+
+    table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+
+}
+tbody{
+    overflow-y: scroll;
+}
+/* .back{
+     background: grey;
+ }*/
+
+ .fundo{
+      background-image: url(./img/note1.jpg);
+ }

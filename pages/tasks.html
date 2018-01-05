@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<!-- Última versão CSS compilada e minificada -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+<!-- Tema opcional -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+
+<!-- Última versão JavaScript compilada e minificada -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDphaHhd__h4dUl-86cNKtI6PaFgDTkA3w",
+        authDomain: "todolist-4e61c.firebaseapp.com",
+        databaseURL: "https://todolist-4e61c.firebaseio.com",
+        projectId: "todolist-4e61c",
+        storageBucket: "todolist-4e61c.appspot.com",
+        messagingSenderId: "1026599875013"
+    };
+    firebase.initializeApp(config);
+</script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
+    <script src="../js/firebase.js"></script>
+</head>
+<body class="jumbotron back fundo"  onload="start_db()">
+
+    <div class="container jumbotron fundo">
+    <div class="row">
+        <div class="col-md-2 col-xs-1"></div>
+        <div class="col-md-8 col-xs-10">
+            <h3 class="center logo">Tasks</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2 col-xs-1"></div>
+        <div class="col-md-8 col-xs-10">
+
+            <table class="table  table-hover1 table-tasks">
+                <thead>
+                    <tr>
+                        <th>Date finish</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>       
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="row">
+            <form action="#" class=" " id="newTask">
+                <div class="col-md-4 col-xs-3 col-sm-3" ></div>
+                <div class="col-md-4 col-xs-6 col-sm-6">
+                    <div class="form-group">
+                        <input type="date" id="dateTask"  class=" input form-control">
+                    </div>
+                    <div class="form-group">
+                        <input  type="text" id="nameTask" placeholder="type the name your next task" class=" input form-control">
+                       </div>
+                    <div class="form-group">
+                        <textarea name="description" id="descripTask" cols="15" rows="4" class="input form-control" maxlength="50"></textarea>
+                    </div>
+                    
+            
+                </div>
+            </form>
+            <div class=" btn-foot">
+            
+                <input id="btn-del" class=" btn btn-danger del" type="button" value="del" onclick="saveData(2)" disabled="true">
+                <input id="btn-add" class=" btn btn-success add" value="add" type="button" onclick="saveData(0)">
+                <input id="btn-edit" class=" btn btn-primary edt" type="button" value="edit" onclick="saveData(1) " disabled="true">
+            </div>
+        </div>
+    </div>
+<!--
+    <div class="row container" style="margin:auto">
+
+        <input type="button" onclick="read()" value="ALERT" class="btn btn-warning">
+    </div> -->
+</div>
+</body>
+
+
+</html>

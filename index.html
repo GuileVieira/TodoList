@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <!-- Última versão CSS compilada e minificada -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous">
+        
+        <!-- Tema opcional -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+            crossorigin="anonymous">
+        
+        <!-- Última versão JavaScript compilada e minificada -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+            <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+            <script>
+              // Initialize Firebase
+              var config = {
+                apiKey: "AIzaSyDphaHhd__h4dUl-86cNKtI6PaFgDTkA3w",
+                authDomain: "todolist-4e61c.firebaseapp.com",
+                databaseURL: "https://todolist-4e61c.firebaseio.com",
+                projectId: "todolist-4e61c",
+                storageBucket: "",
+                messagingSenderId: "1026599875013"
+              };
+              firebase.initializeApp(config);
+            </script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ToDoEasy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<body class="jumbotron container">
+
+    <div class=" row jumbotron">
+            <div class="col-md-2 col-xs-2"></div>
+        <div class=" col-xs-8 col-md-8 center ">
+            <h1 class=" ">ToDo For busy people</h1>
+            <h2>The best form to register your taks in the cloud</h2>
+        </div>
+    </div>
+
+
+    <form action="pages/tasks.html" method="get" >
+        <div class="row ">
+            <div class="col-md-4 col-xs-4"></div>
+            <div class=" col-md-4 col-xs-4 center form-group box-login ">
+                
+                <div class="row margin-top-login">
+                    <div class="col-md-1 col-xs-1"></div>
+                    <div class="col-md-10 col-xs-10 center">
+                        <input type="text" class="form-control" placeholder="username" id="username">
+                    </div>
+                </div>
+
+                <div class="row margin-top-login">
+                    <div class="col-md-1 col-xs-1"></div>
+                    <div class="col-md-10 col-xs-10 center">
+                        <input type="password" class="form-control" placeholder="password" id="passwd">
+                    </div>
+                </div>
+
+                <div class="row margin-top-login">
+                    <div class="col-md-1 col-xs-1"></div>
+                    <div class="col-md-10  col-xs-10 center">
+                        <input type="submit" value="login" class="form-control btn btn-primary">
+                    </div>
+                </div>
+
+                <div class="row margin-top-login hidden-sm hidden-xs">
+
+                    <div class="col-md-1 col-xs-1"></div>
+                    <div class="col-md-5 col-xs-6 center">
+                        <p>Sign up</p>
+
+                     </div>
+                    <div class="col-md-5 col-xs-6 center">
+                        <p>Google</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</body>
+</html>
